@@ -11,8 +11,8 @@ public class ControlStructures3 {
 
         } else if (randomNumber<10){
 
-        } else
-
+        } else {
+        }
 
         // Gib die Zufallszahl aus
 

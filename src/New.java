@@ -14,7 +14,7 @@ public class New {
         int number = 7;
         String name = "Berke";
 
-        System
+        //System
 
     }
     //strg blank
