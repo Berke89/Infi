@@ -12,15 +12,15 @@ public class Testit {
         String [] nameListe = {"Julia","Berke","Elias","Elija","Nathanael","Ani","Jacob"};
         String [] farbeListe = {"braun","schwarz","grau","weiß","karriert"};
         String [] oberListe = {"glatt","kurzhaar","rau","samtig","weich","flaushig"};
-
+        int[] alterListe= {3,2,1,4,5,6,10,11};
         for (int i = 1; i<100;i++) {
             //int randomNumber = random.nextInt(max + 1 - min) + min;
             int ci = r.nextInt(charListe.length - 1 -0) + 0;
             int ni = r.nextInt(nameListe.length - 1 -0) + 0;
             int fi = r.nextInt(farbeListe.length - 1 -0) + 0;
             int oi = r.nextInt(oberListe.length - 1 -0) + 0;
-            int ai = r.nextInt(25 - 1 -0) + 0;
-            mKatzenListe.add(new katze(charListe[0],"nette","weich",6,"weiß","Snow"));
+            int ai = r.nextInt(alterListe.length -1 - 0) +0;
+            mKatzenListe.add(new Katze(charListe[ci],oberListe[ni],alterListe[ai],farbeListe[oi],nameListe[ai]));
         }
         katze.setAlter(2);
         katze.setCharakter("bösartig");
