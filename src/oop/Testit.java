@@ -10,8 +10,8 @@ public class Testit {
         Katze katze = new Katze ();
         String [] charListe = {"bösartig","gutartig","hinterhältig","lustig","schmusig","lieblich","fotzig"};
         String [] nameListe = {"Julia","Berke","Elias","Elija","Nathanael","Ani","Jacob"};
-        String [] farbeListe = {"braun","schwarz","grau","weiß","karriert"};
-        String [] oberListe = {"glatt","kurzhaar","rau","samtig","weich","flaushig"};
+        String [] farbeListe = {"braune","schwarze","graue","weiße","karrierte"};
+        String [] oberListe = {"glatt","kurzhaar","rau","samtig","weich","flauschig"};
         int[] alterListe= {3,2,1,4,5,6,10,11};
         for (int i = 1; i<100;i++) {
             //int randomNumber = random.nextInt(max + 1 - min) + min;
@@ -28,12 +28,12 @@ public class Testit {
         katze.setOberflaechenbeschaffenheit("flauschig");
         katze.setName("Mitzi");
 
-        Katze katze2 = new Katze ("nette","weich",6,"weiß","Snow");
+        Katze katze2 = new Katze ("nette","weich",6,"weiße","Snow");
         mKatzenListe.add(katze2);
 
         //System.out.println("Meine Katze "+katze.getName() + " ist " + katze.getAlter() + " Jahre alt!");
         for (Katze k : mKatzenListe){
-            System.out.println("Meine Katze "+k.getName() + " ist " + k.getAlter() + " Jahre alt!"+k.getCharakter() +" "+k.getFarbe()+" "+k.getOberflaechenbeschaffenheit());
+            System.out.println("Meine Katze "+k.getName() + " ist " + k.getAlter() + " Jahre alt, sie ist eine "+k.getCharakter() +" "+k.getFarbe()+" und "+k.getOberflaechenbeschaffenheit()+"e"+" Katze.");
         }
 
     }
