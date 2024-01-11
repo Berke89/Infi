@@ -31,10 +31,20 @@ public class Testit {
         Katze katze2 = new Katze ("nette","weich",6,"weiße","Snow");
         mKatzenListe.add(katze2);
 
+        int katzenzaehler = 1;
+
+        Haus haus = new Haus(350,"Heaststraße 24, 88732 Hamburg",8,5);
+        haus.getInfo();
+
+
         //System.out.println("Meine Katze "+katze.getName() + " ist " + katze.getAlter() + " Jahre alt!");
-        for (Katze k : mKatzenListe){
-            System.out.println("Meine Katze "+k.getName() + " ist " + k.getAlter() + " Jahre alt, sie ist eine "+k.getCharakter() +" "+k.getFarbe()+" und "+k.getOberflaechenbeschaffenheit()+"e"+" Katze.");
+        for (Katze k : mKatzenListe) {
+            System.out.println("Meine Katze " + k.getName() + " ist " + k.getAlter() + " Jahre alt, sie ist eine " + k.getCharakter() + " " + k.getFarbe() + " und " + k.getOberflaechenbeschaffenheit() + "e" + " Katze.");
+
+
+            haus.addKatze(k);
         }
 
+        haus.getKatzenImHaus();
     }
 }
