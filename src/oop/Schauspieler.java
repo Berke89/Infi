@@ -1,7 +1,7 @@
 package oop;
 
 public class Schauspieler {
-    private String sexualität;
+    private String Sexualität;
     private int alter;
     private String genre;
     private String name;
@@ -12,7 +12,7 @@ public class Schauspieler {
         this.name = name;
         this.alter = alter;
         this.genre = genre;
-        this.sexualität = sexualität;
+        this.Sexualität = Sexualität;
 
     }
     public String getname() {
@@ -39,15 +39,15 @@ public class Schauspieler {
     }
 
     public String getSexualität() {
-        return sexualität;
+        return Sexualität;
     }
 
-    public void setSexualität(String sexualität) {
-        this.sexualität = sexualität;
+    public void setSexualität(String Sexualität) {
+        this.Sexualität = Sexualität;
     }
 
     public void getInfo (){
         System.out.println("Name des Schauspilers" + this.name + "Alter: " + this.alter + "Hauptgenre: " +
-                this.genre + "Sexualität des Schauspilers: " + this.sexualität);
+                this.genre + "Sexualität des Schauspilers: " + this.Sexualität);
     }
 }

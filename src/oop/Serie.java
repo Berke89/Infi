@@ -2,11 +2,7 @@ package oop;
 
 import java.util.ArrayList;
 
-public class Serie {package oop;
-
-import java.util.ArrayList;
-
-    public class Serie {
+public class Serie {
         private String Plattform;
         private String Bewertung;
         private int AnzahlStaffel;
@@ -15,61 +11,52 @@ import java.util.ArrayList;
             return Plattform;
         }
 
-        public void setPlattform (String Plattform) {
+
+
+        private ArrayList<Schauspieler> Schauspilerliste;
+
+        public Serie(String Plattform, String Bewertung, int AnzahlStaffel) {
+            this.Plattform= Plattform;
+            this.Bewertung = Bewertung;
+            this.AnzahlStaffel = AnzahlStaffel;
+            this.Schauspilerliste= new ArrayList<>();
+        }
+
+        public String getPlattform() {
+            return Plattform;
+        }
+
+        public void setPlattform(String Plattform) {
             this.Plattform = Plattform;
         }
 
-        private ArrayList<Katze> katzenListe;
-
-        public Haus(int flaeche, String adresse, int anzahlZimmer, int maxkatzenimhaus) {
-            this.flaeche = flaeche;
-            this.adresse = adresse;
-            this.anzahlZimmer = anzahlZimmer;
-            this.katzenListe = new ArrayList<>();
-            this.maxkatzenimhaus = maxkatzenimhaus;
+        public String getBewertung() {
+            return Bewertung;
         }
 
-        public int getFlaeche() {
-            return flaeche;
+        public void setBewertung(String Bewertung) {
+            this.Bewertung = Bewertung;
         }
 
-        public void setFlaeche(int flaeche) {
-            this.flaeche = flaeche;
+        public int getANzahlStaffel() {
+            return AnzahlStaffel;
         }
 
-        public String getAdresse() {
-            return adresse;
-        }
-
-        public void setAdresse(String adresse) {
-            this.adresse = adresse;
-        }
-
-        public int getAnzahlZimmer() {
-            return anzahlZimmer;
-        }
-
-        public void setAnzahlZimmer(int anzahlZimmer) {
-            this.anzahlZimmer = anzahlZimmer;
+        public void setANzahlStaffel(int AnzahlStaffel) {
+            this.AnzahlStaffel = AnzahlStaffel;
         }
         public void getInfo() {
-            System.out.println("Adresse: "+ this.adresse +
-                    "\nFlaeche:" + this.flaeche + "\nAnzahl der Zimmer:" + this.anzahlZimmer);
-
+            System.out.println("Bewertung: "+ this.Bewertung +
+                    "\nPlattform:" + this.Plattform + "\nAnzahl der Zimmer:" + this.AnzahlStaffel);
         }
-
-        public void addKatze(Katze katze) {
-            if (katzenListe.size() >= this.maxkatzenimhaus) {
-                System.out.println("Der/Die ChefIn will nicht mehr als 5 Katzen" + this.maxkatzenimhaus + " im Haus!!");
-            } else {
-                katzenListe.add(katze);
-            }
+        public void addSchauspilerliste (Schauspieler Schauspiler){
+            if (Schauspilerliste.size() >= this.Schauspiler)
         }
-        public void getKatzenImHaus () {
-            for (Katze k: katzenListe) {
+        public void getSchauspielerInSerie () {
+            for (Schauspieler k: Schauspilerliste) {
                 k.getInfo();
             }
 
         }
     }
-}
+
